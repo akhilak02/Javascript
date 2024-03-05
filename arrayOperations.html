@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Array Operation</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["apple", "orange", "mango"];
+    //   console.log(fruits);
+    //   //add element at end
+    //   fruits.push("kivi");
+    //   console.log(fruits);
+    //   //detete from the end
+    //   fruits.pop();
+    //   console.log(fruits);
+
+    //   delete fruits[1];
+    //   console.log(fruits);
+
+    //add and delete simultaneously first is index num and second is count of deleting element .we can insert N no.of element
+      fruits.splice(1, 1, "grape", "i", "j");
+      console.log(fruits);
+
+      //cut the array from 1 to <3
+      let c = fruits.slice(1, 3);
+      console.log(fruits);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Array Sort</title>
+  </head>
+  <body>
+    <script>
+      let color = ["orange", "green", "yellow", "red", "blue"];
+      //   document.write(color);
+      color.sort();
+
+      console.log(color);
+      color.sort().reverse();
+      console.log(color);
+
+      let num = [4, 9, 5.5, 2, 8];
+      num.sort();
+      console.log(num);
+
+      //array with double or more numbers
+      //asenting
+      let numbers = [77, 122, 664, 23, 90000];
+      numbers.sort(function (a, b) {
+        // return a - b;
+        //desenyting
+        return b - a;
+      });
+      console.log(numbers);
+    </script>
+  </body>
+</html>

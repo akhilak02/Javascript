@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>null validation</p>
+
+    <form action="">
+      Name <input type="text" id="name" onkeyup="clearSpan('sp1')" /><br /><span
+        id="sp1"
+        style="color: red; font-size: 15px"
+      ></span
+      ><br />
+      Email
+      <input type="email" id="email" onkeyup="clearSpan('sp2')" /><br /><span
+        id="sp2"
+        style="color: red; font-size: 15px"
+      ></span
+      ><br />
+      phone
+      <input
+        type="text"
+        name=""
+        id="phone"
+        onkeyup="clearSpan('sp3')"
+      /><br /><span id="sp3" style="color: red"></span>
+      <!-- <input type="submit" onclick="return valid(); return false" /> -->
+      <button name="submit" onclick="return valid();" type="button">
+        submit
+      </button>
+    </form>
+    <!-- <script>
+      function valid() {
+        let name = document.getElementByid("name").value;
+        let email = document.getElementByid("email").value;
+        let phone = document.getElementByid("phone").value;
+        console.log(name);
+        if (name == "") {
+          document.getElementById("sp1").innerHTML = "Please enter your name";
+          return false;
+        }
+        if (email == "") {
+          document.getElementById("sp2").innerHTML = "Please enter your Email";
+          return false;
+        }
+        if (phone == "") {
+          document.getElementById("sp3").innerHTML =
+            "Please enter your Phone number";
+          return false;
+        }
+        return true;
+      }
+
+      function clearSpan(sp) {
+        document.getElementById(sp).innerHTML = "";
+      } -->
+
+    <script>
+      function valid() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+        console.log(name);
+        if (name == "") {
+          document.getElementById("sp1").innerHTML = "Please enter your name";
+          return false;
+        }
+        if (email == "") {
+          document.getElementById("sp2").innerHTML = "Please enter your Email";
+          return false;
+        }
+        if (phone == "") {
+          document.getElementById("sp3").innerHTML =
+            "Please enter your Phone number";
+          return false;
+        }
+        return true;
+      }
+
+      function clearSpan(sp) {
+        document.getElementById(sp).innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

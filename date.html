@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date</title>
+  </head>
+  <body>
+    <script>
+      let a = new Date();
+      document.write(a);
+      document.write("<br>" + "date:" + a.toDateString());
+      document.write("<br>" + "day no:" + a.getDay()); //day number
+      document.write("<br>" + "Time:" + a.toLocaleTimeString());
+      document.write("<br>" + "Year:" + a.getFullYear());
+      document.write("<br>" + "Hours:" + a.getHours());
+      document.write("<br>" + "Milliseconds:" + a.getMilliseconds());
+      document.write("<br>" + "Minutes:" + a.getMinutes());
+      document.write("<br>" + "Month:" + a.getMonth());//0-11 ie feb=1
+    </script>
+  </body>
+</html>
